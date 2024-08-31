@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1725117355950' stop='1725117359211'>
+    <name>Todo List</name>
+    <title>Todo List</title>
+    <test-cases>
+        <test-case start='1725117355951' status='passed' stop='1725117359210'>
+            <name>Create a Todo List</name>
+            <title>Create a Todo List</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 12-17.5'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
