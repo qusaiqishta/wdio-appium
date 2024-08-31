@@ -12,7 +12,7 @@ config.port = 4723;
 // Specs
 // ============
 config.specs = [
-  path.join(process.cwd(), './test/specs/ios/webview*.js')
+  path.join(process.cwd(), './test/specs/ios/ios-todo-list.spec.js')
 ];
 
 //
@@ -22,10 +22,10 @@ config.specs = [
 config.capabilities = [
   {
     platformName: "ios",
-    "appium:platformVersion": "16.0",
-    "appium:deviceName": "iPhone 14 Pro",
+    "appium:platformVersion": "17.5",
+    "appium:deviceName": "iPhone 12",
     "appium:automationName": "XCUITest",
-    "appium:app": path.join(process.cwd(), "app/ios/wdioNativeDemoApp.app"),
+    "appium:app": path.join(process.cwd(), "app/ios/MVCTodo.app.zip"),
   }
 ]
 
