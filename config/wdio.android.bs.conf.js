@@ -1,5 +1,6 @@
 require('dotenv').config()
 const { config } = require('./wdio.shared.conf');
+const path = require('path');
 
 //
 // ============
@@ -13,7 +14,7 @@ config.key = process.env.BROWSERSTACK_KEY;
 // Specs
 // ============
 config.specs = [
-  path.join(process.cwd(), './test/specs/android/add-note-screen*.js')
+  path.join(process.cwd(), './test/specs/android/add-note.spec.js')
 ];
 
 //
@@ -23,10 +24,10 @@ config.specs = [
 config.capabilities = [
   {
     platformName: "Android",
-    "appium:platformVersion": "10.0",
+    "appium:platformVersion": "9.0",
     "appium:deviceName": "Google Pixel 3",
     "appium:automationName": "UIAutomator2",
-    "appium:app": "bs://cd209a98beb9c4bb48cfadf74d84c99092ec639c",
+    "appium:app": "bs://3e91d583c95d84a898c0a45e43fb1c9298126c32",
     "appium:autoGrantPermissions": true
   }
 ]

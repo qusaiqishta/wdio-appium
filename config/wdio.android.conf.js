@@ -12,7 +12,7 @@ config.port = 4723;
 // Specs
 // ============
 config.specs = [
-  path.join(process.cwd(), './test/specs/android/webview*.js')
+  path.join(process.cwd(), './test/specs/android/add-note.spec.js')
 ];
 
 //
@@ -23,9 +23,9 @@ config.capabilities = [
   {
     platformName: "Android",
     "appium:platformVersion": "10.0",
-    "appium:deviceName": "Nexus 6p",
+    "appium:deviceName": "Pixel 3",
     "appium:automationName": "UIAutomator2",
-    "appium:app": path.join(process.cwd(), "./app/android/ColorNote Notepad.apk"),
+    "appium:app": path.join(process.cwd(), "./app/android/Notepad.apk"),
     "appium:autoGrantPermissions": true
   }
 ]
